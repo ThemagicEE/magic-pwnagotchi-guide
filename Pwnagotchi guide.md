@@ -22,6 +22,7 @@ Pwnagotchi is an open-source project that combines a Raspberry Pi, an e-Paper di
 - A Raspberry Pi Zero W (Heart/Base) 
 - micro-SD card(min. 16GB, better more and min. 100 MB/s, better more)
 - Micro-USB cable which can transfer data(very important)
+- Pins (Pi with pre installed pins or solder them our self)
 - Display
 - portable power source: Power Bank
 
@@ -32,12 +33,18 @@ Pwnagotchi is an open-source project that combines a Raspberry Pi, an e-Paper di
 #### Hardware in deep explanation (alternatives)
 
 ##### The Base of our little Friend
-I've used a Raspberry Pi Zero W (Pi0W) but other Pi's are as well supported by the image we're gonna use.  
-By time of this guide the following Pi's are supported:
-- Raspberry Pi Zero W
-- Raspberry Pi Zero 2 W
+I've used a Raspberry Pi Zero W (Pi0W), but other Pis are also supported by the image we're going to use. As of this guide, the following Pis are supported:
+
+- Raspberry Pi Zero W (H)
+- Raspberry Pi Zero 2 W (H)
 - Raspberry Pi 3
 - Raspberry Pi 4
 - Raspberry Pi 5
 
-I recommend the Pi0W or Pi02W, because the have the charm of the Pwnagotchi. They are cheap and small that's what makes the Pwnagotchi so special. 
+I recommend the RPi0W (Raspberry Pi Zero W) because the original project was built for this Pi. That's also the Pi I will be using in this guide. The other models should work fine too, and the installation process is similar.
+
+##### SD card
+Any micro-SD card should work as long as it has more than 16GB of space and can write at over 100 MB/s. 
+
+I would recommend an SD card with around 128 GB capacity because this way you don't have to worry about space and you can capture handshakes for a long time.
+A faster SD card makes sense too, because it allows for faster boot times and faster data transmission.
