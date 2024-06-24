@@ -21,11 +21,11 @@ Pwnagotchi is an open-source project that combines a Raspberry Pi, an e-Paper di
 #### Short From (Recommended Hardware)
 
 ##### Needed Hardware
-- A Raspberry Pi Zero W (Heart/Base) 
+- A Raspberry Pi Zero W(H) (Heart/Base) 
 - micro-SD card(min. 16GB, better more and min. 100 MB/s, better more)
 - Micro-USB cable which can transfer data(very important)
 - Pins (Pi with pre installed pins or solder them our self)
-- Display
+- Display (Waveshare V4)
 - portable power source: Power Bank
 
 ##### Useful Hardware
@@ -66,4 +66,28 @@ You will need to solder pins on your Pi to install the display, or you can buy a
 ![[Pasted image 20240623161037.png]]
 
 ##### Display(E-Paper Hat)
-There are many displays/E-Paper HATs that work. To check if your e-paper HAT is supported, just go to the following website and press "Ctrl + F" on your keyboard to search for your display (e.g., waveshare_4). Write everything together with no spaces, or use underscores.
+There are many displays/E-Paper HATs that work. To check if your e-paper HAT is supported, just go to [this website](https://github.com/jayofelony/pwnagotchi/blob/33ff5a0bf85ad277005ca6feaac7f16968ac5a31/pwnagotchi/ui/display.py#L67) and press "Ctrl + F" on your keyboard to search for your display (e.g., waveshare_4). Write everything together with no spaces, or use underscores(sometimes you need to try both methods to find your display). 
+I've used the [2.13inch E-Ink display by Waveshare](https://www.waveshare.com/2.13inch-e-paper-hat.htm) and had no problems with it but any other display in that list should work too. 
+
+You could even choose not to use a display, but I believe that the display makes this project special and distinguishes it from other WiFi hacking tools.
+
+
+##### Power source
+While you are setting your little friend up, your PC will be the power source. However, if you want to use it on the go, you will need a power bank. Any power bank that you can connect your micro-USB cable to should work. 
+From my experience, a power bank with around 5000 mAh can run the Pwnagotchi for about 10-12 hours.
+
+
+##### Real time clock
+A real time clock can come in handy to get accurate time stems on your captured handshakes.
+But it's not nesseray by any means. I will show in this guide how to install one but if you don't one, you can just skipp that part of the guide. I just believe that it's very helpful to match you handshakes with the location you've been.  
+
+Any I2C model can be used(PCF8523, DSL1307 or DS3231 based)
+
+
+##### Case
+A case is very use full to protect your Pwnagotchi. There are a few different options when it comes to cases. You could 3d Print one, use a pre build case or use a paper box, like I did. I just used the box of the display and padded it a little bit(like shown on the picture).
+
+![[IMG_20240624_175049.jpg]]
+
+If you wanna 3d Print a Case, there are many print file from the community you can use just choose one.  
+Here are a few: https://www.thingiverse.com/thing:3920904
