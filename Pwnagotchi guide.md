@@ -91,3 +91,27 @@ A case is very use full to protect your Pwnagotchi. There are a few different op
 
 If you wanna 3d Print a Case, there are many print file from the community you can use just choose one.  
 Here are a few: https://www.thingiverse.com/thing:3920904
+
+
+
+
+### Building/First Boot Tutorial
+
+#### Assemble Pi and Display
+**Get your Pi and Display ready!**
+![[Pi and Display.jpg]]
+
+Now we have to connect them both. You see these "holes" on the display? These match perfectly with the pins on our Pi. Just stick them together.
+
+Like this:
+![[Pi and Display assambled.jpg]]
+
+You need to push the display all the way down, even though it might feel wrong. It has to be fully connected; otherwise, you won't get a picture.
+
+Like shown on following images:
+![[IMG_20240625_153509.jpg]]
+
+![[IMG_20240625_153612.jpg]]
+
+Hardware wise are you finished. I suggest to install a case and real time clock after configuration everything. 
+
