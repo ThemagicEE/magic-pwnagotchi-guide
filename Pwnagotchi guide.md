@@ -95,7 +95,7 @@ Here are a few: https://www.thingiverse.com/thing:3920904
 
 
 
-### Building/First Boot Tutorial
+### Building/Setup Tutorial
 
 #### Assemble Pi and Display
 **Get your Pi and Display ready!**
@@ -113,5 +113,22 @@ Like shown on following images:
 
 ![[IMG_20240625_153612.jpg]]
 
-Hardware wise are you finished. I suggest to install a case and real time clock after configuration everything. 
+Hardware-wise, you are finished. I suggest installing a case and a real-time clock after configuring everything. This way, you can easily disassemble your friend if something doesn't work.
+
+
+#### Flashing the Image
+
+##### What you need
+Get the the latest image for your Pi here: 
+https://github.com/jayofelony/pwnagotchi/releases
+
+If you use a **Raspberry Pi Zero W(H)**, use the **32 bit** version.
+For **any other** mentioned above, use the **64 bit** version.
+
+To flash the image to the SD card, you need the [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/).
+
+#### Flashing the Image
+
+_Click_ "Choose OS," scroll all the way down, and select "Use Custom." Navigate to your Downloads folder and choose the downloaded image. In the final step, select your SD card and _click_ "Write".
+
 
