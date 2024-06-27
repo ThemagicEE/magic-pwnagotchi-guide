@@ -152,17 +152,21 @@ Open the "Device Manager" by searching for it in your taskbar. And open it.
 After a while, either a "USB Ethernet/RNDIS" Gadget or a device under "Ports" should appear. If an RNDIS Gadget appears, you are good to go; otherwise, we will have to configure it to appear as one.
 ![[Pasted image 20240627215326.png]]
 
-To make it into a RNDIS device, you will need to download the RNDIS drivers [here](https://modclouddownloadprod.blob.core.windows.net/shared/mod-rndis-driver-windows.zip).
+To make it into an RNDIS device, you will need to download the RNDIS drivers [here](https://modclouddownloadprod.blob.core.windows.net/shared/mod-rndis-driver-windows.zip).
 
-Right click the device and select "properties".
+Right-click the device and select "Properties."
 ![[Pasted image 20240627220154.png]]
 
-Then click on "Drivers" and select "Update Driver".
+Then click on "Driver" and select "Update Driver."
 
-Click "Browse my computer for drivers"
+Click "Browse my computer for drivers."
 ![[Pasted image 20240627220341.png]]
 
-And navigate to your **unzipped** Drivers. After then just click "OK".
+Navigate to your **unzipped** drivers folder, and then click "OK."
+
+Now you're good to go, and we can almost SSH into our Pi.
+
+
 
 
 
