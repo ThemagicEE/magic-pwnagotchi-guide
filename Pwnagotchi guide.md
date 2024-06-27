@@ -127,8 +127,42 @@ For **any other** mentioned above, use the **64 bit** version.
 
 To flash the image to the SD card, you need the [**Raspberry Pi Imager**](https://www.raspberrypi.com/software/).
 
-#### Flashing the Image
-
 _Click_ "Choose OS," scroll all the way down, and select "Use Custom." Navigate to your Downloads folder and choose the downloaded image. In the final step, select your SD card and _click_ "Write".
+
+This may take a while, depending on your SD-card and reader.
+
+
+#### First Boot
+##### Starting Pi up
+Insert your SD card into your Pi and grab your micro-USB cable. Your Pi has two USB ports, as shown in the image:
+
+![[IMG_20240627_203440.jpg]]
+
+Connect your Pi through the Data Port with your PC. 
+
+**Now wait!!!** Don't touch your friend, don't disconnect him, just wait. 
+
+The first boot can take up to 25 minutes Go touch some grass and come back after a while.
+
+##### Establish Connection to Pi
+###### Finding the device
+Open the "Device Manager" by searching for it in your taskbar. And open it.
+![[Pasted image 20240627215031.png]]
+
+After a while, either a "USB Ethernet/RNDIS" Gadget or a device under "Ports" should appear. If an RNDIS Gadget appears, you are good to go; otherwise, we will have to configure it to appear as one.
+![[Pasted image 20240627215326.png]]
+
+To make it into a RNDIS device, you will need to download the RNDIS drivers [here](https://modclouddownloadprod.blob.core.windows.net/shared/mod-rndis-driver-windows.zip).
+
+Right click the device and select "properties".
+![[Pasted image 20240627220154.png]]
+
+Then click on "Drivers" and select "Update Driver".
+
+Click "Browse my computer for drivers"
+![[Pasted image 20240627220341.png]]
+
+And navigate to your **unzipped** Drivers. After then just click "OK".
+
 
 
