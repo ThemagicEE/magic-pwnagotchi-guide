@@ -163,10 +163,41 @@ Click "Browse my computer for drivers."
 ![[Pasted image 20240627220341.png]]
 
 Navigate to your **unzipped** drivers folder, and then click "OK."
+Your Pi should now be shown as "RNDIS Gadget".
 
 Now you're good to go, and we can almost SSH into our Pi.
 
 
+###### Configure Network Settings  
+
+To SSH into our Pi, we first need to configure the network settings of the Pi.
+
+Open the settings on your PC and navigate to the **"Network & internet"** tab.
+
+Next, click on **"Advanced network settings."**
+
+You should see your RNDIS Gadget there:
+![[Pasted image 20240703210423.png]]
+
+Expand the menu of your Pi and click on "**Edit**".
+![[Pasted image 20240703211052.png]]
+
+In the new menu search for "**Internet Protocol Version 4(TCP/IPv4)**" and double click it:
+![[Pasted image 20240703211541.png]]
+
+
+Now enter following data in the brackets:
+***Ip address***: "10.0.0.1"
+***Subnet mask***: "255.255.255.0"
+***Default gateway***: "10.0.0.1"
+
+***Preferred DNS server***: "1.1.1.1"
+***Alternate DNS server***: "8.8.8.8"
+
+![[Pasted image 20240703212228.png]]
+
+Accept everything, and now we can SSH into our Pi.
 
 
 
+###### SSH into the Pi
