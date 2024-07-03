@@ -189,15 +189,22 @@ In the new menu search for "**Internet Protocol Version 4(TCP/IPv4)**" and doubl
 Now enter following data in the brackets:
 ***Ip address***: "10.0.0.1"
 ***Subnet mask***: "255.255.255.0"
-***Default gateway***: "10.0.0.1"
 
 ***Preferred DNS server***: "1.1.1.1"
 ***Alternate DNS server***: "8.8.8.8"
 
-![[Pasted image 20240703212228.png]]
+![[Pasted image 20240703215811.png]]
+
 
 Accept everything, and now we can SSH into our Pi.
 
 
 
 ###### SSH into the Pi
+Open up "CMD" by searching for "Command Prompt" in the taskbar:
+![[Pasted image 20240703214104.png]]
+Open it up.
+Type "**ssh pi@10.0.0.2**" and click enter.
+
+The password is "**raspberry**".
+
