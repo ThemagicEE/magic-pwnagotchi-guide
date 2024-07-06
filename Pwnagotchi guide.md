@@ -28,7 +28,7 @@ Pwnagotchi is an open-source project that combines a Raspberry Pi, an e-Paper di
 - Display (Waveshare V4)
 - portable power source: Power Bank
 
-##### Useful Hardware
+##### Useful Hardware(but not needed)
 - Real time clock(hardware clock)
 - Case
 
@@ -174,10 +174,19 @@ To SSH into our Pi, we first need to configure the network settings of the Pi.
 
 Open the settings on your PC and navigate to the **"Network & internet"** tab.
 
-Next, click on **"Advanced network settings."**
+Next, click on **"Advanced network settings"**.
 
 You should see your RNDIS Gadget there:
 ![[Pasted image 20240703210423.png]]
+
+Expand the menu of your ***main network*** and click on "**Edit**".
+![[Pasted image 20240706200243.png]]
+In the new menu click on "**Sharing**" and double click it.
+
+Enable internet sharing and choose your pwnagotchi(in my case "Ethernet 2").
+![[Pasted image 20240706200819.png]]
+
+Accept everything and go back to the "**Advanced network settings**".
 
 Expand the menu of your Pi and click on "**Edit**".
 ![[Pasted image 20240703211052.png]]
@@ -195,12 +204,11 @@ Now enter following data in the brackets:
 
 ![[Pasted image 20240703215811.png]]
 
-
 Accept everything, and now we can SSH into our Pi.
 
-
-
-###### SSH into the Pi
+***Important***
+If you reconnect your Pi to your PC, you will have to disable network sharing and enable it again and you have to repeat the above shown steps.
+###### SSH into the Pi and change the password
 Open up "CMD" by searching for "Command Prompt" in the taskbar:
 ![[Pasted image 20240703214104.png]]
 Open it up.
@@ -208,3 +216,16 @@ Type "**ssh pi@10.0.0.2**" and click enter.
 
 The password is "**raspberry**".
 
+Now we have to change the password of our pi.
+Type "**passwd**" and click enter to change the password for SSH excise. 
+
+
+###### Basic configuration 
+Run this command "**sudo pwnagotchi --wizard**" to setup a basic config-file.
+
+You will setup following things with this command:
+ - the name for your pwnagotchi
+ - whitelist of networks(networks to ignore(like your home network))
+	 - you can find the information needed for this in the properties of your home network.
+- Enable or disable BT-tethering(disable it for now I will cover this later on)
+- Enable the display and choose the color of it
