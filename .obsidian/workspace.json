@@ -8,7 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b9cb2f6a0963ecdb",
+            "id": "903504105338bab8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Images/Building Tutorial/BasicConfig.png"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "29751a3538c2acbf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a17bb2239f1d7051",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Images/Building Tutorial/WithoutPins.png"
+              }
+            }
+          },
+          {
+            "id": "5c401baca7347e3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pwnagotchi guide.md",
+                "file": "Images/Building Tutorial/WithoutPins.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pwnagotchi guide.md",
+                "file": "Images/Building Tutorial/WithoutPins.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pwnagotchi guide.md"
+                "file": "Images/Building Tutorial/WithoutPins.png"
+              }
+            }
+          },
+          {
+            "id": "a945231026f48bdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pwnagotchi guide.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -146,20 +184,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9cb2f6a0963ecdb",
+  "active": "a17bb2239f1d7051",
   "lastOpenFiles": [
-    "Pasted image 20240706210100.png",
-    "Pasted image 20240706205401.png",
-    "Images/Pasted image 20240706200819.png",
-    "Images/Pasted image 20240706200243.png",
-    "Images/Pasted image 20240703215811.png",
-    "Images/Pasted image 20240703214623.png",
     "Pwnagotchi guide.md",
-    "Images/Pasted image 20240703214554.png",
-    "Images/Pasted image 20240703211052.png",
-    "Images/Pasted image 20240703211541.png",
-    "Images/Pasted image 20240703214104.png",
+    "Images/Building Tutorial/WithoutPins.png",
+    "Images/Building Tutorial/Pi and Display assambled.jpg",
+    "Images/Building Tutorial/Pi and Display.jpg",
+    "Images/Introduction",
+    "Images/Building Tutorial/BasicConfig.png",
+    "Images/Building Tutorial/PowerPortDataPort.jpg",
+    "Images/Building Tutorial/BasicConfigAdvanced.png",
+    "Images/Building Tutorial/InternetSharing.png",
+    "Images/Building Tutorial/MainNetworkEdit.png",
+    "Images/Building Tutorial/ConfigureIpv4.png",
+    "Images/Building Tutorial/ConfigureIpv4.png",
+    "Pasted image 20240706210100.png.~tmp",
     "README.md",
-    "Images/Pasted image 20240703212228.png"
+    "Pasted image 20240706205401.png.~tmp"
   ]
 }

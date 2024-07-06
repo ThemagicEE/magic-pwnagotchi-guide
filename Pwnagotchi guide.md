@@ -12,7 +12,7 @@ modified: file.mday
 ### What is a Pwnagotchi
 Pwnagotchi is an open-source project that combines a Raspberry Pi, an e-Paper display, and various scripts to create an autonomous Wi-Fi hacking device. It leverages artificial intelligence to learn from its environment, capture Wi-Fi handshakes, and grow more effective over time. As it "learns," your Pwnagotchi develops its own personality, interacting with you through its e-Paper display, making the experience both educational and entertaining.
 
-![[Pasted image 20240623163443.png]]
+![[TopImage.png]]
 
 ## How to build one
 
@@ -61,9 +61,9 @@ Like this one: https://www.amazon.com/Amazon-Basics-Charging-Transfer-Gold-Plate
 You will need to solder pins on your Pi to install the display, or you can buy a Pi with pre-soldered pins, like I did. The Raspberry Pi 3-5 models have all pins installed, but the RPi0W and RPi02W do not have any pre-installed pins in their default versions. However, there is a version with an "H" (RPi0WH) where the "H" means that pins are already installed.
 
 
-![[Pasted image 20240623160712.png]]  
+![[WithoutPins.png]]  
 
-![[Pasted image 20240623161037.png]]
+![[WithPins.png]]
 
 ##### Display(E-Paper Hat)
 There are many displays/E-Paper HATs that work. To check if your e-paper HAT is supported, just go to [this website](https://github.com/jayofelony/pwnagotchi/blob/33ff5a0bf85ad277005ca6feaac7f16968ac5a31/pwnagotchi/ui/display.py#L67) and press "Ctrl + F" on your keyboard to search for your display (e.g., waveshare_4). Write everything together with no spaces, or use underscores(sometimes you need to try both methods to find your display). 
@@ -87,7 +87,7 @@ Any I2C model can be used(PCF8523, DSL1307 or DS3231 based)
 ##### Case
 A case is very use full to protect your Pwnagotchi. There are a few different options when it comes to cases. You could 3d Print one, use a pre build case or use a paper box, like I did. I just used the box of the display and padded it a little bit(like shown on the picture).
 
-![[IMG_20240624_175049.jpg]]
+![[PaperCase.jpg]]
 
 If you wanna 3d Print a Case, there are many print file from the community you can use just choose one.  
 Here are a few: https://www.thingiverse.com/thing:3920904
@@ -109,9 +109,9 @@ Like this:
 You need to push the display all the way down, even though it might feel wrong. It has to be fully connected; otherwise, you won't get a picture.
 
 Like shown on following images:
-![[IMG_20240625_153509.jpg]]
+![[displayAssambleWrong.jpg]]
 
-![[IMG_20240625_153612.jpg]]
+![[displayAssambleRight.jpg]]
 
 Hardware-wise, you are finished. I suggest installing a case and a real-time clock after configuring everything. This way, you can easily disassemble your friend if something doesn't work.
 
@@ -136,7 +136,7 @@ This may take a while, depending on your SD-card and reader.
 ##### Starting Pi up
 Insert your SD card into your Pi and grab your micro-USB cable. Your Pi has two USB ports, as shown in the image:
 
-![DataportAndPowerport](IMG_20240627_203440.jpg)
+![DataportAndPowerport](PowerPortDataPort.jpg)
 
 Connect your Pi through the Data Port with your PC. 
 
@@ -147,20 +147,20 @@ The first boot can take up to 25 minutes Go touch some grass and come back after
 ##### Establish Connection to Pi
 ###### Finding the device
 Open the "Device Manager" by searching for it in your taskbar. And open it.
-![[Pasted image 20240627215031.png]]
+![[DeviceManagerSearch.png]]
 
 After a while, either a "USB Ethernet/RNDIS" Gadget or a device under "Ports" should appear. If an RNDIS Gadget appears, you are good to go; otherwise, we will have to configure it to appear as one.
-![[Pasted image 20240627215326.png]]
+![[DeviceManager.png]]
 
 To make it into an RNDIS device, you will need to download the RNDIS drivers [here](https://modclouddownloadprod.blob.core.windows.net/shared/mod-rndis-driver-windows.zip).
 
 Right-click the device and select "Properties."
-![[Pasted image 20240627220154.png]]
+![[DeviceManagerProperties.png]]
 
 Then click on "Driver" and select "Update Driver."
 
 Click "Browse my computer for drivers."
-![[Pasted image 20240627220341.png]]
+![[BrowseForDrivers.png]]
 
 Navigate to your **unzipped** drivers folder, and then click "OK."
 Your Pi should now be shown as "RNDIS Gadget".
@@ -177,22 +177,22 @@ Open the settings on your PC and navigate to the **"Network & internet"** tab.
 Next, click on **"Advanced network settings"**.
 
 You should see your RNDIS Gadget there:
-![[Pasted image 20240703210423.png]]
+![[RndisGadjetInNetworkSettings.png]]
 
 Expand the menu of your ***main network*** and click on "**Edit**".
-![[Pasted image 20240706200243.png]]
+![[MainNetworkEdit.png]]
 In the new menu click on "**Sharing**" and double click it.
 
 Enable internet sharing and choose your pwnagotchi(in my case "Ethernet 2").
-![[Pasted image 20240706200819.png]]
+![[InternetSharing.png]]
 
 Accept everything and go back to the "**Advanced network settings**".
 
 Expand the menu of your Pi and click on "**Edit**".
-![[Pasted image 20240703211052.png]]
+![[RndisGadjetEdit.png]]
 
 In the new menu search for "**Internet Protocol Version 4(TCP/IPv4)**" and double click it:
-![[Pasted image 20240703211541.png]]
+![[RNDISPropertiesIPv4.png]]
 
 
 Now enter following data in the brackets:
@@ -202,7 +202,7 @@ Now enter following data in the brackets:
 ***Preferred DNS server***: "1.1.1.1"
 ***Alternate DNS server***: "8.8.8.8"
 
-![[Pasted image 20240703215811.png]]
+![[ConfigureIpv4.png]]
 
 Accept everything, and now we can SSH into our Pi.
 
@@ -210,7 +210,7 @@ Accept everything, and now we can SSH into our Pi.
 If you reconnect your Pi to your PC, you will have to disable network sharing and enable it again and you have to repeat the above shown steps.
 ###### SSH into the Pi and change the password
 Open up "CMD" by searching for "Command Prompt" in the taskbar:
-![[Pasted image 20240703214104.png]]
+![[SearchForCMD.png]]
 Open it up.
 Type "**`ssh pi@10.0.0.2`**" and click enter.
 
@@ -236,7 +236,7 @@ The display of your Pi should display something after a short while.
 Run the this command: "**`sudo nano /etc/pwnagotchi/config.toml`**".
 
 A file editor should open and it should look like this:
-![[Pasted image 20240706205401.png]]
+![[BasicConfig.png]]
 
 And copy this into the editor:
 `main.plugins.auto-update.enabled = true
@@ -244,7 +244,7 @@ And copy this into the editor:
 `main.plugins.auto-update.interval = 1
 
 `bettercap.handshakes = "/handshakes"
-![[Pasted image 20240706210100.png]]
+![[BasicConfigAdvanced.png]]
 
 Now click **CTRL + S** to save the changes and then click **CTRL + X** to exit the editor.
 
