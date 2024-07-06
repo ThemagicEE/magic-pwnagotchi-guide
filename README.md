@@ -4,7 +4,7 @@ created this guide to help newcomers with this great project. I found that there
 # Where is the guide 
 The guide can be found in this file: [Pwnagotchi guide.md](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Pwnagotchi%20guide.md)
 # Important!
-This guide is not finished and is still worked on. So far you can setup your pwnagotchi in a basic way. 
+This guide is not finished and is still being worked on. So far, you can set up your Pwnagotchi in a basic way.
 
 # Credits
 - Check the original Project out:  https://pwnagotchi.ai/
