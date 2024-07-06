@@ -45,7 +45,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Images/Building Tutorial/WithoutPins.png",
+                "file": "Pwnagotchi guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Images/Building Tutorial/WithoutPins.png",
+                "file": "Pwnagotchi guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Images/Building Tutorial/WithoutPins.png"
+                "file": "Pwnagotchi guide.md"
               }
             }
           },
@@ -184,12 +185,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a17bb2239f1d7051",
+  "active": "5c401baca7347e3f",
   "lastOpenFiles": [
+    "Images/Building Tutorial/PiAndDisplay.jpg",
+    "Images/Building Tutorial/PiAndDisplayAssambled.jpg",
     "Pwnagotchi guide.md",
+    "Pi.md",
     "Images/Building Tutorial/WithoutPins.png",
-    "Images/Building Tutorial/Pi and Display assambled.jpg",
-    "Images/Building Tutorial/Pi and Display.jpg",
     "Images/Introduction",
     "Images/Building Tutorial/BasicConfig.png",
     "Images/Building Tutorial/PowerPortDataPort.jpg",
