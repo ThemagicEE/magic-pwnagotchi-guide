@@ -136,7 +136,7 @@ This may take a while, depending on your SD-card and reader.
 ##### Starting Pi up
 Insert your SD card into your Pi and grab your micro-USB cable. Your Pi has two USB ports, as shown in the image:
 
-![[IMG_20240627_203440.jpg]]
+![DataportAndPowerport](IMG_20240627_203440.jpg)
 
 Connect your Pi through the Data Port with your PC. 
 
