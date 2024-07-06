@@ -1,6 +1,8 @@
 # Welcome to a beginner guide to the pwnagotchi
-I created this guide to help new commers with this great project. I've found that there is no really up to date guide and that you have to dick through discord servers and old guides to get your Pi to work that why I made this guide based on what work for me. 
+created this guide to help newcomers with this great project. I found that there are no truly up-to-date guides, and you have to dig through Discord servers and old guides to get your pwnagotchi to work. That's why I made this guide based on what worked for me.
 
+# Where is the guide 
+The guide can be found in this file: [Pwnagotchi guide.md](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Pwnagotchi%20guide.md)
 # Important!
 This guide is not finished and is still worked on. So far you can setup your pwnagotchi in a basic way. 
 
