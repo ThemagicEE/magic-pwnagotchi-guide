@@ -212,16 +212,16 @@ If you reconnect your Pi to your PC, you will have to disable network sharing an
 Open up "CMD" by searching for "Command Prompt" in the taskbar:
 ![[Pasted image 20240703214104.png]]
 Open it up.
-Type "**ssh pi@10.0.0.2**" and click enter.
+Type "**`ssh pi@10.0.0.2`**" and click enter.
 
 The password is "**raspberry**".
 
 Now we have to change the password of our pi.
-Type "**passwd**" and click enter to change the password for SSH excise. 
+Type "**`passwd`**" and click enter to change the password for SSH excise. 
 
 
 ###### Basic configuration 
-Run this command "**sudo pwnagotchi --wizard**" to setup a basic config-file.
+Run this command "**`sudo pwnagotchi --wizard`**" to setup a basic config-file.
 
 You will setup following things with this command:
  - the name for your pwnagotchi
@@ -229,3 +229,28 @@ You will setup following things with this command:
 	 - you can find the information needed for this in the properties of your home network.
 - Enable or disable BT-tethering(disable it for now I will cover this later on)
 - Enable the display and choose the color of it
+
+The display of your Pi should display something after a short while.
+
+###### Edit Config-File
+Run the this command: "**`sudo nano /etc/pwnagotchi/config.toml`**".
+
+A file editor should open and it should look like this:
+![[Pasted image 20240706205401.png]]
+
+And copy this into the editor:
+`main.plugins.auto-update.enabled = true
+`main.plugins.auto-update.install = true
+`main.plugins.auto-update.interval = 1
+
+`bettercap.handshakes = "/handshakes"
+![[Pasted image 20240706210100.png]]
+
+Now click **CTRL + S** to save the changes and then click **CTRL + X** to exit the editor.
+
+These changes enable auto update and change the location of the captures handshakes to access them easily. 
+
+Restart your pwnagotchi by running this command: **pwnkill**
+
+Your Pi is now ready for use just plug a power bank into the power-port and run around with it.
+(Only use on networks you are allowed to)
