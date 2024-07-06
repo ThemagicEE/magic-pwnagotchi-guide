@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pwnagotchi guide.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pwnagotchi guide.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pwnagotchi guide.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pwnagotchi guide.md"
+                "file": "README.md"
               }
             }
           },
@@ -187,11 +187,12 @@
   },
   "active": "5c401baca7347e3f",
   "lastOpenFiles": [
-    "Images/Building Tutorial/PiAndDisplay.jpg",
-    "Images/Building Tutorial/PiAndDisplayAssambled.jpg",
     "Pwnagotchi guide.md",
+    "().md",
     "Pi.md",
     "Images/Building Tutorial/WithoutPins.png",
+    "Images/Building Tutorial/PiAndDisplay.jpg",
+    "Images/Building Tutorial/PiAndDisplayAssambled.jpg",
     "Images/Introduction",
     "Images/Building Tutorial/BasicConfig.png",
     "Images/Building Tutorial/PowerPortDataPort.jpg",
