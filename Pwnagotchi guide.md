@@ -147,19 +147,23 @@ The first boot can take up to 25 minutes Go touch some grass and come back after
 ##### Establish Connection to Pi
 ###### Finding the device
 Open the "Device Manager" by searching for it in your taskbar. And open it.
+
 ![DeviceManagerSearch.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/DeviceManagerSearch.png)
 
 After a while, either a "USB Ethernet/RNDIS" Gadget or a device under "Ports" should appear. If an RNDIS Gadget appears, you are good to go; otherwise, we will have to configure it to appear as one.
+
 ![DeviceManager.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/DeviceManager.png)
 
 To make it into an RNDIS device, you will need to download the RNDIS drivers [here](https://modclouddownloadprod.blob.core.windows.net/shared/mod-rndis-driver-windows.zip).
 
 Right-click the device and select "Properties."
+
 ![DeviceManagerProperties.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/DeviceManagerProperties.png)
 
 Then click on "Driver" and select "Update Driver."
 
 Click "Browse my computer for drivers."
+
 ![BrowseForDrivers.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/BrowseForDrivers.png)
 
 Navigate to your **unzipped** drivers folder, and then click "OK."
@@ -177,21 +181,27 @@ Open the settings on your PC and navigate to the **"Network & internet"** tab.
 Next, click on **"Advanced network settings"**.
 
 You should see your RNDIS Gadget there:
+
 ![RndisGadjetInNetworkSettings.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/RndisGadjetInNetworkSettings.png)
 
 Expand the menu of your ***main network*** and click on "**Edit**".
+
 ![MainNetworkEdit.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/MainNetworkEdit.png)
+
 In the new menu click on "**Sharing**" and double click it.
 
 Enable internet sharing and choose your pwnagotchi(in my case "Ethernet 2").
+
 ![InternetSharing.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/InternetSharing.png)
 
 Accept everything and go back to the "**Advanced network settings**".
 
 Expand the menu of your Pi and click on "**Edit**".
+
 ![RndisGadjetEdit.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/RndisGadjetEdit.png)
 
 In the new menu search for "**Internet Protocol Version 4(TCP/IPv4)**" and double click it:
+
 ![RNDISPropertiesIPv4.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/RNDISPropertiesIPv4.png)
 
 
@@ -210,7 +220,9 @@ Accept everything, and now we can SSH into our Pi.
 If you reconnect your Pi to your PC, you will have to disable network sharing and enable it again and you have to repeat the above shown steps.
 ###### SSH into the Pi and change the password
 Open up "CMD" by searching for "Command Prompt" in the taskbar:
+
 ![SearchForCMD.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/SearchForCMD.png)
+
 Open it up.
 Type "**`ssh pi@10.0.0.2`**" and click enter.
 
@@ -236,6 +248,7 @@ The display of your Pi should display something after a short while.
 Run the this command: "**`sudo nano /etc/pwnagotchi/config.toml`**".
 
 A file editor should open and it should look like this:
+
 ![BasicConfig.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/BasicConfig.png)
 
 And copy this into the editor:
@@ -244,6 +257,7 @@ And copy this into the editor:
 `main.plugins.auto-update.interval = 1
 
 `bettercap.handshakes = "/handshakes"
+
 ![BasicConfigAdvanced.png](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Images/Building%20Tutorial/BasicConfigAdvanced.png)
 
 Now click **CTRL + S** to save the changes and then click **CTRL + X** to exit the editor.

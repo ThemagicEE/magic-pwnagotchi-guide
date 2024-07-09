@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Pwnagotchi guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Pwnagotchi guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Pwnagotchi guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Pwnagotchi guide.md"
               }
             }
           },
@@ -187,22 +187,23 @@
   },
   "active": "5c401baca7347e3f",
   "lastOpenFiles": [
+    "Images/Building Tutorial/PaperCase.jpg",
+    "Images/Building Tutorial/PiAndDisplay.jpg",
+    "Images/Building Tutorial/InternetSharing.png",
+    "Images/Building Tutorial/displayAssambleRight.jpg",
+    "Images/Building Tutorial/DeviceManagerSearch.png",
+    "Images/Building Tutorial/DeviceManagerProperties.png",
+    "Images/Building Tutorial/DeviceManager.png",
+    "Images/Building Tutorial/BrowseForDrivers.png",
+    "Images/Building Tutorial/BasicConfigAdvanced.png",
+    "Images/Building Tutorial/BasicConfig.png",
     "Pwnagotchi guide.md",
+    "README.md",
     "().md",
     "Pi.md",
     "Images/Building Tutorial/WithoutPins.png",
-    "Images/Building Tutorial/PiAndDisplay.jpg",
-    "Images/Building Tutorial/PiAndDisplayAssambled.jpg",
     "Images/Introduction",
-    "Images/Building Tutorial/BasicConfig.png",
-    "Images/Building Tutorial/PowerPortDataPort.jpg",
-    "Images/Building Tutorial/BasicConfigAdvanced.png",
-    "Images/Building Tutorial/InternetSharing.png",
-    "Images/Building Tutorial/MainNetworkEdit.png",
-    "Images/Building Tutorial/ConfigureIpv4.png",
-    "Images/Building Tutorial/ConfigureIpv4.png",
     "Pasted image 20240706210100.png.~tmp",
-    "README.md",
     "Pasted image 20240706205401.png.~tmp"
   ]
 }
