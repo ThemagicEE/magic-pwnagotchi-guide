@@ -6,7 +6,44 @@
     --colormain: #021526;
     --colorasecond: #03346E;
     --colorthird: #6EACDA;
-    --coloracsent: #E2E2B6;
+    --coloraccent: #E2E2B6;
     --shadow: #00000030 0px 0px 10px 0px;
     --transiton: 0.3s ease-in-out
   }
+
+body {
+    font: var(--p);
+    background-color: var(--colormain);
+    color: var(--colorbody);
+    margin: auto;
+  }
+
+header{
+    display: flex;
+    gap: 20rem;
+    margin: 1rem;
+}
+
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+nav > a{
+    color: var(--coloraccent);
+    text-decoration: none;
+    font: var(--p1);
+  }
+
+  nav > a:hover{
+    scale: 1.05;
+    transition: var(--transiton);
+    border: none
+  }
+
+.current-site{
+    border-bottom: var(--colorthird) solid;
+}
