@@ -1,5 +1,5 @@
 # Welcome to a beginner guide to the pwnagotchi
-created this guide to help newcomers with this great project. I found that there are no truly up-to-date guides, and you have to dig through Discord servers and old guides to get your pwnagotchi to work. That's why I made this guide based on what worked for me.
+I created this guide to help newcomers with this great project. I found that there are no truly up-to-date guides, and you have to dig through Discord servers and old guides to get your pwnagotchi to work. That's why I made this guide based on what worked for me.
 
 # Where is the guide 
 The guide can be found in this file: [Pwnagotchi guide.md](https://github.com/ThemagicEE/magic-pwnagotchi-guide/blob/main/Pwnagotchi%20guide.md)
