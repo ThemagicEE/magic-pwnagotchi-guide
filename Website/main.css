@@ -1,0 +1,12 @@
+:root {
+    --ff: Arial, sans-serif;
+    --p: 18px/22px var(--ff);
+    --p1: 24px/30px var(--ff);
+    --colorbody: #fff;
+    --colormain: #021526;
+    --colorasecond: #03346E;
+    --colorthird: #6EACDA;
+    --coloracsent: #E2E2B6;
+    --shadow: #00000030 0px 0px 10px 0px;
+    --transiton: 0.3s ease-in-out
+  }
