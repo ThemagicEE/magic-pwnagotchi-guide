@@ -20,8 +20,17 @@ body {
 
 header{
     display: flex;
-    gap: 20rem;
     margin: 1rem;
+    gap: 3rem;
+}
+
+header > h1{
+  flex: 1;
+}
+
+header > nav{
+  flex: 3;
+  justify-content: left;
 }
 
 nav{
@@ -36,6 +45,8 @@ nav > a{
     color: var(--coloraccent);
     text-decoration: none;
     font: var(--p1);
+    flex: 1;
+    max-width: fit-content;
   }
 
   nav > a:hover{
