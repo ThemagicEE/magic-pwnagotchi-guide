@@ -4,22 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "257fac8b9bbaed4d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "903504105338bab8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Images/Building Tutorial/BasicConfig.png"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "29751a3538c2acbf",
         "type": "tabs",
         "children": [
