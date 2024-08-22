@@ -8,5 +8,9 @@
     width: 100%;
     max-width: 700px;
     height: auto;
+    display: block;
 }
 
+p {
+    line-height: 1.6rem;
+}
