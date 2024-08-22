@@ -139,27 +139,27 @@
 
                     You should see your RNDIS Gadget there:<br>
                 </p>
-                <img src="Images/Building Tutorial/RndisGadjetInNetworkSettings.png">
+                <img src="Images/Building Tutorial/RndisGadjetInNetworkSettings.png" class="guide-image">
                 <p>
                     Expand the menu of your main network and click on "Edit".
                 </p>
-                <img src="Images/Building Tutorial/MainNetworkEdit.png">
+                <img src="Images/Building Tutorial/MainNetworkEdit.png" class="guide-image">
                 <p>
                     In the new menu click on "Sharing" and double click it.
 
                     Enable internet sharing and choose your pwnagotchi(in my case "Ethernet 2").
                 </p>
-                <img src="Images/Building Tutorial/InternetSharing.png">
+                <img src="Images/Building Tutorial/InternetSharing.png" class="guide-image">
                 <p>
                     Accept everything and go back to the "Advanced network settings". <br>
 
                     Expand the menu of your Pi and click on "Edit".
                 </p>
-                <img src="Images/Building Tutorial/RndisGadjetEdit.png">
+                <img src="Images/Building Tutorial/RndisGadjetEdit.png" class="guide-image">
                 <p>
                     In the new menu search for "Internet Protocol Version 4(TCP/IPv4)" and double click it:
                 </p>
-                <img src="Images/Building Tutorial/RNDISPropertiesIPv4.png">
+                <img src="Images/Building Tutorial/RNDISPropertiesIPv4.png" class="guide-image">
                 <p>
                     Now enter following data in the brackets:<br>
                     Ip address: "10.0.0.1"<br>
@@ -168,7 +168,7 @@
                     Preferred DNS server: "1.1.1.1"<br>
                     Alternate DNS server: "8.8.8.8"<br>
                 </p>
-                <img src="Images/Building Tutorial/ConfigureIpv4.png">
+                <img src="Images/Building Tutorial/ConfigureIpv4.png" class="guide-image">
                 <p>
                     Accept everything, and now we can SSH into our Pi.
                 </p>
@@ -182,17 +182,56 @@
                 <p>
                     Open up "CMD" by searching for "Command Prompt" in the taskbar:
                 </p>
-                <img src="Images/Building Tutorial/SearchForCMD.png">
+                <img src="Images/Building Tutorial/SearchForCMD.png" class="guide-image">
                 <p>
                     Open it up.<br>
-                    Type "**`ssh pi@10.0.0.2`**" and click enter.<br><br>
+                    Type "ssh pi@10.0.0.2" and click enter.<br><br>
 
-                    The password is "**raspberry**".<br>
+                    The password is "raspberry".<br>
 
                     Now we have to change the password of our pi.<br>
-                    Type "**`passwd`**" and click enter to change the password for SSH excise. <br>
+                    Type "passwd" and click enter to change the password for SSH excise. <br>
                 </p>
+                <h6>Basic Configuration</h6>
+                <p>
+                    Run this command "sudo pwnagotchi --wizard" to setup a basic config-file.<br>
+                    You will setup following things with this command:
+                    <ul>
+                        <li>the name for your pwnagotchi</li>
+                        <li>whitelist of networks(networks to ignore(like your home network))</li>
+                        <li>you can find the information needed for this in the properties of your home network.</li>
+                        <li>Enable or disable BT-tethering(disable it for now I will cover this later on)</li>
+                        <li>Enable the display and choose the color of it</li>
+                    </ul>
+                    <br><br>
+                    The display of your Pi should display something after a short while.
+                </p>
+                <h6>Edit Config-File</h6>
+                <p>
+                    Run the this command: "sudo nano /etc/pwnagotchi/config.toml".<br>
 
+                    A file editor should open and it should look like this:
+
+                </p>
+                <img src="Images/Building Tutorial/BasicConfig.png" class="guide-image">
+                <p>
+                    main.plugins.auto-update.enabled = true<br>
+                    main.plugins.auto-update.install = true<br>
+                    main.plugins.auto-update.interval = 1<br>
+
+                    bettercap.handshakes = "/handshakes"<br>
+                </p>
+                <img src="Images/Building Tutorial/BasicConfigAdvanced.png" class="guide-image">
+                <p>
+                    Now click CTRL + S to save the changes and then click CTRL + X to exit the editor.<br>
+
+                    These changes enable auto update and change the location of the captures handshakes to access them easily. <br>
+
+                    Restart your pwnagotchi by running this command: pwnkill<br>
+
+                    Your Pi is now ready for use just plug a power bank into the power-port and run around with it.
+                    (Only use on networks you are allowed to)<br>
+                </p>
             </div>
         </main>   
         <footer>
