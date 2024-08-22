@@ -1,0 +1,12 @@
+@import "main.css";
+
+.guide-part {
+    max-width: 80%;
+}
+
+.guide-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
